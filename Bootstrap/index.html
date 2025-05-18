@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navi Dish Swam Foundation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    }
+    .card:hover {
+      background-color: #e6f5e6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      transition: 0.3s ease;
+    }
+    .card-title {
+      color: #0b6623;
+    }
+    .btn-primary {
+      background-color: #0b6623;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0a5c20;
+    }
+    #about {
+    background-color: #e6f4ea; 
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+    color: #2f4f2f; 
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  #about h2 {
+    color: #0b6623; 
+    font-weight: 700;
+  }
+
+  #about img {
+    border: 5px solid #b7d8b7; 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(11, 102, 35, 0.3); 
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+#gallery img {
+  width: 100%;        
+  height: 250px;
+  object-fit: cover;  
+  border-radius: 8px; 
+}
+
+#sidd:hover {
+  background-color: rgb(227, 225, 225);
+  box-shadow: 0 4px 20px rgba(127, 255, 212, 0.7);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+
+  .contact-form {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .glass-bg {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .styled-input {
+    border-radius: 1rem !important;
+    border: 1px solid #ced4da;
+    transition: 0.3s ease;
+  }
+
+  .styled-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2);
+  }
+
+  .form-floating > label {
+    padding-left: 1rem;
+    color: #555;
+    font-weight: 500;
+  }
+
+  /* Button Glow + Hover Effect */
+  .btn-glow {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .btn-glow:hover {
+    background: linear-gradient(135deg, #2c82ff, #00d4ff);
+  }
+
+  .btn-glow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.6s;
+  }
+
+  .btn-glow:hover::after {
+left:100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="ChatGPT Image May 15, 2025, 07_22_16 PM.png" alt="Logo" width="50" height="50" class="rounded">
+      Navi Dish Swam Foundation
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sectors">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-light text-success ms-2" href="#donate">Donate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section class="bg-light text-center p-5" id="home">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Empowering Lives, Building Futures</h1>
+    <p class="lead">We work towards transforming communities through Education, Healthcare, Environment, and Livelihood support.</p>
+    <a href="#sectors" class="btn btn-success">Explore Our Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="container my-5" id="about">
+  <div class="text-center mb-4">
+    <h2>About Us</h2>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        Navi Dish Swam Foundation is a non-profit organization working to bring meaningful change in the lives of the most underprivileged members of society.
+        We believe that every individual deserves access to education, healthcare, hygiene, and livelihood opportunities—regardless of their identity or circumstances.
+      </p>
+      <p>
+        We run several projects including education and mentorship for children, health camps in rural areas, plantation drives for the environment,
+        and skill development programs to support employment.
+      </p>
+      <p>
+        Our goal is to create a society where every person feels proud of who they are and can move towards a brighter future.
+        Let's come together and ignite a new light of hope.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="istockphoto-1435661969-612x612.jpg" alt="About Image" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Work -->
+<section class="container my-5 " id="sectors" >
+  <div class="text-center mb-4">
+    <h2 class="btn btn-outline-dark">Our Focus Areas</h2>
+  </div>
+  <div class="row justify-content-center">
+    
+    <!-- Education -->
+    <div class="card p-3 m-3" style="width: 18rem;">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="card-img-top" alt="Education">
+      <div class="card-body">
+        <h5 class="card-title">Education</h5>
+        <p class="card-text">Access to quality education, digital tools & mentorship for underprivileged children.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Healthcare -->
+    <div class="card p-3 m-3 pt-5" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4Jo4u5x9fYIo6VCEBSCqWIoDZ2uC1OlhHA&s" class="card-img-top" alt="Healthcare">
+      <div class="card-body">
+        <h5 class="card-title">Healthcare</h5>
+        <p class="card-text">Health camps, medicine distribution & hygiene awareness in rural areas.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Environment -->
+    <div class="card p-3 m-3" style="width: 18rem;">
+      <img src="https://t3.ftcdn.net/jpg/05/75/82/22/360_F_575822240_dBlP0oH7vvWFSmn1Xafi2UHuzTtbZZaV.jpg" class="card-img-top" alt="Environment">
+      <div class="card-body">
+        <h5 class="card-title">Environment</h5>
+        <p class="card-text">Tree plantations, clean-up drives, and awareness campaigns for a greener tomorrow.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Livelihood -->
+    <div class="card p-3 m-3" style="width: 18rem;">
+      <img src="https://www.shutterstock.com/image-photo/portrait-indian-female-farmer-traditional-260nw-2059924982.jpg" class="card-img-top" alt="Livelihood">
+      <div class="card-body">
+        <h5 class="card-title">Livelihood</h5>
+        <p class="card-text">Vocational training, skill development & employment assistance for sustainable living.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="container my-5 " id="gallery">
+  <div class="text-center mb-4">
+    <h2>Gallery</h2>
+  </div>
+  <div class="row g-3" id>
+    <div class="col-md-4 h-10" id="sidd"><img src="thumb_banner_1687427932.jpg" class="img-fluid rounded" alt="School Activity" /></div>
+    <div class="col-md-4 h-10" id="sidd"><img src="group-of-hands-holding-together-free-photo.jpeg" class="img-fluid rounded" alt="Medical Camp" /></div>
+    <div class="col-md-4 h-10" id="sidd"><img src="images (2).jpeg" class="img-fluid rounded" alt="Tree Plantation" /></div>
+  </div>
+  <div class="row g-3 mt-5">
+    <div class="col-md-4 h-10" id="sidd"><img src="czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvMzA4LW5hbWU3MTQ4LWpqLmpwZw.webp" class="img-fluid rounded" alt="School Activity" /></div>
+    <div class="col-md-4 h-10" id="sidd"><img src="pexels-rdne-6646863.jpg" class="img-fluid rounded" alt="Medical Camp" /></div>
+    <div class="col-md-4 h-10" id="sidd"><img src="images (5).jpeg" class="img-fluid rounded" alt="Tree Plantation" /></div>
+  </div>
+</section>
+
+<!-- Contact -->
+
+    
+  <section class="container my-5" id="contact">
+  <div class="text-center mb-4">
+    <h2 class="section-title " id="cont">Contact Us</h2>
+    <p class="section-subtitle">We'd love to hear from you. Reach out with any questions or feedback!</p>
+  </div>
+
+  <form class="contact-form p-4 p-md-5 rounded-4 shadow-lg glass-bg">
+    <div class="row mb-4">
+      <div class="col-md-6 form-floating mb-3 mb-md-0">
+        <input type="text" class="form-control styled-input" id="nameInput" placeholder="Your Name" required />
+        <label for="nameInput">Your Name</label>
+      </div>
+      <div class="col-md-6 form-floating">
+        <input type="email" class="form-control styled-input" id="emailInput" placeholder="Your Email" required />
+        <label for="emailInput">Your Email</label>
+      </div>
+    </div>
+    <div class="form-floating mb-4">
+      <textarea class="form-control styled-input" placeholder="Your Message" id="messageInput" style="height: 150px;"></textarea>
+      <label for="messageInput">Your Message</label>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-glow px-5 py-2 fs-5 rounded-pill">Send Message</button>
+    </div>
+  </form>
+</section>
+
+<!-- Donate -->
+<section class="container my-5" id="donate">
+  <div class="text-center mb-4">
+    <h2>Support Our Cause</h2>
+    <p>Your donation helps us reach more people and create real change.</p>
+    <a href="/Bootstrap/Donate.html" class="btn btn-primary" target="_blank">Donate Now</a>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

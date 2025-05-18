@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UPI Donation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    #qrSpot {
+      width: 220px;
+      height: 220px;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      background-color: #f9f9f9;
+    }
+    #upiIdInput {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    #donateBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Donate via UPI</h2>
+  
+  <div id="qrSpot">
+    <!-- QR will be inserted here -->
+     <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=example@upi&pn=SampleUser&am=1&cu=INR" class="img img-mr-2" alt="Sample UPI QR" width="200" height="200" />
+
+    
+  </div>
+  
+  Enter UPI-ID here:<input type="text" id="upiIdInput" placeholder="Enter UPI ID (e.g., name@upi)" />
+  <br>
+  <button id="donateBtn">Donate</button>
+
+  <script>
+    // You'll add JS logic later here
+  </script>
+
+</body>
+</html>
