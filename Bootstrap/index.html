@@ -124,11 +124,23 @@
     transform: skewX(-20deg);
     transition: 0.6s;
   }
+.gallery-card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.2);
+  cursor: pointer;
+}
 
   .btn-glow:hover::after {
 left:100%;
     }
-
+DW w
   </style>
 </head>
 <body>
@@ -243,21 +255,57 @@ left:100%;
 </section>
 
 <!-- Gallery -->
-<section class="container my-5 " id="gallery">
+<section class="container my-5" id="gallery">
   <div class="text-center mb-4">
-    <h2>Gallery</h2>
+    <h2 class="fw-bold text-success">Gallery</h2>
+    <p class="section-subtitle">Moments from our impactful work on ground</p>
   </div>
-  <div class="row g-3" id>
-    <div class="col-md-4 h-10" id="sidd"><img src="thumb_banner_1687427932.jpg" class="img-fluid rounded" alt="School Activity" /></div>
-    <div class="col-md-4 h-10" id="sidd"><img src="group-of-hands-holding-together-free-photo.jpeg" class="img-fluid rounded" alt="Medical Camp" /></div>
-    <div class="col-md-4 h-10" id="sidd"><img src="images (2).jpeg" class="img-fluid rounded" alt="Tree Plantation" /></div>
-  </div>
-  <div class="row g-3 mt-5">
-    <div class="col-md-4 h-10" id="sidd"><img src="czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvMzA4LW5hbWU3MTQ4LWpqLmpwZw.webp" class="img-fluid rounded" alt="School Activity" /></div>
-    <div class="col-md-4 h-10" id="sidd"><img src="pexels-rdne-6646863.jpg" class="img-fluid rounded" alt="Medical Camp" /></div>
-    <div class="col-md-4 h-10" id="sidd"><img src="images (5).jpeg" class="img-fluid rounded" alt="Tree Plantation" /></div>
+
+  <div class="row g-4">
+    <!-- Gallery Item 1 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="thumb_banner_1687427932.jpg" class="card-img-top" alt="Gallery Image 1">
+      </div>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="group-of-hands-holding-together-free-photo.jpeg" class="card-img-top" alt="Gallery Image 2">
+      </div>
+    </div>
+
+    <!-- Gallery Item 3 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="images (2).jpeg" class="card-img-top" alt="Gallery Image 3">
+      </div>
+    </div>
+
+    <!-- Gallery Item 4 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvMzA4LW5hbWU3MTQ4LWpqLmpwZw.webp" class="card-img-top" alt="Gallery Image 4">
+      </div>
+    </div>
+
+    <!-- Gallery Item 5 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="pexels-rdne-6646863.jpg" class="img-fluid rounded" class="card-img-top" alt="Gallery Image 5">
+      </div>
+    </div>
+
+    <!-- Gallery Item 6 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 border-0 gallery-card">
+        <img src="images (5).jpeg" class="card-img-top" alt="Gallery Image 6">
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- Contact -->
 
